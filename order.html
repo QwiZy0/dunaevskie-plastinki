@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пластинка под заказ · Dunaevskie Plastinki</title>
+    <meta name="description" content="Dunaevskie Plastinki: магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди. Достанем любую пластинку под заказ.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img class="logo-disc" src="favicon.svg" alt="" width="36" height="36">
+            <span>Dunaevskie<br>Plastinki</span>
+        </a>
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="about.html">О магазине</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Переключатель темы (чистый CSS, без JavaScript) -->
+        <div class="toggle" title="Сменить тему">
+            <input type="checkbox" id="theme" aria-label="Светлая тема">
+            <label for="theme"></label>
+        </div>
+    </header>
+
+    <main>
+        <section class="order">
+            <h1 class="grad">Найдём любую пластинку</h1>
+            <p class="lead">Ищете альбом, которого нет в каталоге? Напишите нам. Мы поищем у поставщиков и коллекционеров и вернёмся с ценой.</p>
+            <ol class="steps" id="how">
+                <li>
+                    <h3>Напишите, что ищете</h3>
+                    <p>Исполнитель, альбом и пожелания к изданию. Если не помните название, опишите словами.</p>
+                </li>
+                <li>
+                    <h3>Мы найдём и назовём цену</h3>
+                    <p>Ответим за 1–3 дня. Вы решаете, брать или нет. Деньги вперёд мы не просим.</p>
+                </li>
+                <li>
+                    <h3>Привезём пластинку</h3>
+                    <p>Заберёте в Брянске или получите почтой по всей России.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Что вы ищете?</h2>
+            <form class="order-form" action="mailto:hello@dunaevskie.example" method="post" enctype="text/plain">
+                <label>Исполнитель
+                    <input type="text" name="artist" placeholder="Например, Green Day" required>
+                </label>
+                <label>Альбом
+                    <input type="text" name="album" placeholder="Например, Dookie">
+                </label>
+
+                <fieldset class="chips">
+                    <legend>Какое издание</legend>
+                    <input type="radio" name="edition" id="e1" value="любое" checked>
+                    <label for="e1">Любое</label>
+                    <input type="radio" name="edition" id="e2" value="новое">
+                    <label for="e2">Новое</label>
+                    <input type="radio" name="edition" id="e3" value="б/у">
+                    <label for="e3">Б/у</label>
+                    <input type="radio" name="edition" id="e4" value="цветной винил">
+                    <label for="e4">Цветной винил</label>
+                </fieldset>
+
+                <label>Бюджет, ₽
+                    <input type="text" name="budget" placeholder="Можно не указывать">
+                </label>
+                <label>Как с вами связаться
+                    <input type="text" name="contact" placeholder="Телефон, Telegram или почта" required>
+                </label>
+                <label>Комментарий
+                    <textarea name="comment" rows="4" placeholder="Год, страна издания, цвет винила, любые детали"></textarea>
+                </label>
+
+                <button class="btn-big" type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="about.html">О магазине</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <p>© 2026 Dunaevskie Plastinki · Брянск · Обновлено 27.10.2026 · <a href="index.html">На главную</a></p>
+    </footer>
+
+</body>
+</html>

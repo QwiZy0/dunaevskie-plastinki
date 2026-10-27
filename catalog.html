@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог · Dunaevskie Plastinki</title>
+    <meta name="description" content="Dunaevskie Plastinki: магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди. Достанем любую пластинку под заказ.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img class="logo-disc" src="favicon.svg" alt="" width="36" height="36">
+            <span>Dunaevskie<br>Plastinki</span>
+        </a>
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+            <li class="hot"><a href="order.html">Под заказ</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="about.html">О магазине</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Переключатель темы (чистый CSS, без JavaScript) -->
+        <div class="toggle" title="Сменить тему">
+            <input type="checkbox" id="theme" aria-label="Светлая тема">
+            <label for="theme"></label>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="grad">Каталог</h1>
+            <p class="lead">20 пластинок: от зарубежного поп-панка до русского инди. Наведите курсор на обложку, и диск выглянет из конверта.</p>
+            <div class="grid">
+                
+                                <!-- 1. ПЕРВАЯ КАРТОЧКА (blink-182) -->
+                <article class="card">
+                    <div class="cover-img">
+                        <!-- Путь: папка images, файл blink182.webp -->
+                        <img src="images/blink182.webp" alt="blink-182 — Enema of the State">
+                    </div>
+                    <h3>blink-182</h3>
+                    <p class="album">Enema of the State, 1999</p>
+                    <p>Тот самый альбом с «All the Small Things». Классика поп-панка.</p>
+                    <p class="buy">
+                        <strong>7 400 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+
+                <!-- 2. ВТОРАЯ КАРТОЧКА (Lil Peep Pt.1) -->
+                <article class="card">
+                    <div class="cover-img">
+                        <!-- ВНИМАНИЕ: здесь пробел и заглавная буква, как у вас в папке -->
+                        <img src="images/Lil Peep1.webp" alt="Lil Peep — Come Over When You're Sober, Pt. 1">
+                    </div>
+                    <h3>Lil Peep</h3>
+                    <p class="album">Come Over When You're Sober, Pt. 1, 2017</p>
+                    <p>Дебютный студийный альбом: гитарный эмо-рэп и мрачная нежность.</p>
+                    <p class="buy">
+                        <strong>8 900 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+
+                <!-- 3. ТРЕТЬЯ КАРТОЧКА (Lil Peep Pt.2) -->
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/lilpeep2.webp" alt="Lil Peep — Come Over When You're Sober, Pt. 2">
+                    </div>
+                    <h3>Lil Peep</h3>
+                    <p class="album">Come Over When You're Sober, Pt. 2, 2018</p>
+                    <p>Выпущен после ухода артиста, продолжает историю первой части.</p>
+                    <p class="buy">
+                        <strong>9 500 ₽</strong>
+                        <span class="tag few">Осталось 1–2</span>
+                    </p>
+                </article>
+
+                <!-- 4. ОСТАЛЬНЫЕ КАРТОЧКИ (Оставляем градиенты) -->
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/orig.webp" alt="blink-182 — Take Off Your Pants and Jacket">
+                    </div>
+                    <h3>blink-182</h3>
+                    <p class="album">Take Off Your Pants and Jacket, 2001</p>
+                    <p>Быстрые и смешные песни, внутри «The Rock Show» и «First Date».</p>
+                    <p class="buy">
+                        <strong>7 600 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/hah.webp" alt="blink-182 — California">
+                    </div>
+                    <h3>blink-182</h3>
+                    <p class="album">California, 2016</p>
+                    <p>Свежий альбом с яркими мелодиями и песней «Bored to Death».</p>
+                    <p class="buy">
+                        <strong>7 900 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/haha.webp" alt="Fall Out Boy — From Under the Cork Tree">
+                    </div>
+                    <h3>Fall Out Boy</h3>
+                    <p class="album">From Under the Cork Tree, 2005</p>
+                    <p>Эпоха подводки и скинни-джинс: «Sugar, We're Goin Down».</p>
+                    <p class="buy">
+                        <strong>7 900 ₽</strong>
+                        <span class="tag few">Осталось 1–2</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/Fall_Out_Boy_-_Infinity_On_High.jpg" alt="Fall Out Boy — Infinity on High">
+                    </div>
+                    <h3>Fall Out Boy</h3>
+                    <p class="album">Infinity on High, 2007</p>
+                    <p>Театральный и бодрый, с хитом «This Ain't a Scene, It's an Arms Race».</p>
+                    <p class="buy">
+                        <strong>8 100 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/hahah.webp" alt="Fall Out Boy — So Much (For) Stardust">
+                    </div>
+                    <h3>Fall Out Boy</h3>
+                    <p class="album">So Much (For) Stardust, 2023</p>
+                    <p>Современный альбом группы, красивый и немного драматичный.</p>
+                    <p class="buy">
+                        <strong>8 800 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/hahaha.webp" alt="Green Day — American Idiot">
+                    </div>
+                    <h3>Green Day</h3>
+                    <p class="album">American Idiot, 2004</p>
+                    <p>Рок-опера о бунте. Двойной винил и плотный звук.</p>
+                    <p class="buy">
+                        <strong>8 200 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/hahahah.webp" alt="Green Day — Dookie">
+                    </div>
+                    <h3>Green Day</h3>
+                    <p class="album">Dookie, 1994</p>
+                    <p>Альбом, с которого поп-панк стал массовым.</p>
+                    <p class="buy">
+                        <strong>8 000 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/111.webp" alt="My Chemical Romance — The Black Parade">
+                    </div>
+                    <h3>My Chemical Romance</h3>
+                    <p class="album">The Black Parade, 2006</p>
+                    <p>Громко, театрально и красиво. Для тех, кто любит драму.</p>
+                    <p class="buy">
+                        <strong>9 300 ₽</strong>
+                        <span class="tag few">Осталось 1–2</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/222.webp" alt="My Chemical Romance — Three Cheers for Sweet Revenge">
+                    </div>
+                    <h3>My Chemical Romance</h3>
+                    <p class="album">Three Cheers for Sweet Revenge, 2004</p>
+                    <p>С песнями «Helena» и «I'm Not Okay». Тёмный и честный альбом.</p>
+                    <p class="buy">
+                        <strong>8 700 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/333.webp" alt="Paramore — Riot!">
+                    </div>
+                    <h3>Paramore</h3>
+                    <p class="album">Riot!, 2007</p>
+                    <p>Яркий и быстрый, внутри «Misery Business».</p>
+                    <p class="buy">
+                        <strong>7 600 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/444.webp" alt="Paramore — After Laughter">
+                    </div>
+                    <h3>Paramore</h3>
+                    <p class="album">After Laughter, 2017</p>
+                    <p>Солнечные синты и грустные тексты. Хорошо играет вечером.</p>
+                    <p class="buy">
+                        <strong>8 300 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/555.webp" alt="Sum 41 — All Killer No Filler">
+                    </div>
+                    <h3>Sum 41</h3>
+                    <p class="album">All Killer No Filler, 2001</p>
+                    <p>С песнями «Fat Lip» и «In Too Deep». Энергия начала 2000-х.</p>
+                    <p class="buy">
+                        <strong>7 300 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/777.webp" alt="Neck Deep — Life's Not Out to Get You">
+                    </div>
+                    <h3>Neck Deep</h3>
+                    <p class="album">Life's Not Out to Get You, 2014</p>
+                    <p>Современный британский поп-панк с живым звуком.</p>
+                    <p class="buy">
+                        <strong>7 100 ₽</strong>
+                        <span class="tag pre">Предзаказ</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/666.webp" alt="Machine Gun Kelly — Tickets to My Downfall">
+                    </div>
+                    <h3>Machine Gun Kelly</h3>
+                    <p class="album">Tickets to My Downfall, 2020</p>
+                    <p>Разворот рэпера в сторону поп-панка. Быстрый и дерзкий.</p>
+                    <p class="buy">
+                        <strong>8 600 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/888.webp" alt="Ногу Свело! — Хару Мамбуру">
+                    </div>
+                    <h3>Ногу Свело!</h3>
+                    <p class="album">Хару Мамбуру, 1991</p>
+                    <p>Дебютный альбом группы с одноимённой песней.</p>
+                    <p class="buy">
+                        <strong>6 900 ₽</strong>
+                        <span class="tag in">В наличии</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/kishlak_-_shik2.jpg" alt="Кишлак — Виниловое издание">
+                    </div>
+                    <h3>Кишлак</h3>
+                    <p class="album">Виниловое издание СХИК2, 2023</p>
+                    <p>Русскоязычная альтернатива с мягким, эмоциональным звуком.</p>
+                    <p class="buy">
+                        <strong>6 500 ₽</strong>
+                        <span class="tag pre">Предзаказ</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="cover-img">
+                        <img src="images/осень.webp" alt="Конец солнечных дней — Виниловое издание">
+                    </div>
+                    <h3>Конец солнечных дней</h3>
+                    <p class="album">Виниловое издание Осень, 2020</p>
+                    <p>Атмосферный и немного грустный инди для долгих вечеров.</p>
+                    <p class="buy">
+                        <strong>6 400 ₽</strong>
+                        <span class="tag pre">Предзаказ</span>
+                    </p>
+                </article>
+                <!-- Карточка-приглашение заказать -->
+                <article class="card card-order">
+                    <h3>Не нашли свою?</h3>
+                    <p>Напишите исполнителя и альбом. Мы найдём пластинку и привезём в Брянск.</p>
+                    <p><a class="btn-big" href="order.html">Заказать</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+            <li class="hot"><a href="order.html">Под заказ</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="about.html">О магазине</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <p>© 2026 Dunaevskie Plastinki · Брянск · Обновлено 27.10.2026 · <a href="index.html">На главную</a></p>
+    </footer>
+
+    <!-- Плавающая кнопка: видна на каждой странице -->
+    <a class="fab" href="order.html">
+        <img src="favicon.svg" alt="" width="28" height="28">
+        <span>Нет нужной? Закажем!</span>
+    </a>
+
+</body>
+</html>
