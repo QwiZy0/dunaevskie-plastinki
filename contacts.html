@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты · Dunaevskie Plastinki</title>
-    <meta name="description" content="Dunaevskie Plastinki: магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди. Достанем любую пластинку под заказ.">
+    <meta name="description" content="Магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
     <header class="header">
         <a class="logo" href="index.html">
-            <img class="logo-disc" src="favicon.svg" alt="" width="36" height="36">
+            <img class="logo-disc" src="favicon.svg" alt="Логотип" width="36" height="36">
             <span>Dunaevskie<br>Plastinki</span>
         </a>
-        <nav>
+        <nav aria-label="Главное меню">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html">Под заказ</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html">Под заказ</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html" aria-current="page">Контакты</a></li>
             </ul>
         </nav>
-        <!-- Переключатель темы (чистый CSS, без JavaScript) -->
         <div class="toggle" title="Сменить тему">
             <input type="checkbox" id="theme" aria-label="Светлая тема">
             <label for="theme"></label>
@@ -51,7 +49,6 @@
                     </p>
                     <p><a class="btn-big" href="order.html">Заказать пластинку</a></p>
                 </div>
-                <!-- Карта проезда (Яндекс.Карты) -->
                 <div class="map">
                     <iframe title="Карта проезда: Брянск, остановка Стальзавод" loading="lazy" src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%2C%20%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%A1%D1%82%D0%B0%D0%BB%D1%8C%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4&amp;z=16"></iframe>
                 </div>
@@ -59,24 +56,22 @@
         </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="footer">
-        <nav>
+        <nav aria-label="Меню в подвале">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html">Под заказ</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html">Под заказ</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html" aria-current="page">Контакты</a></li>
             </ul>
         </nav>
         <p>© 2026 Dunaevskie Plastinki · Брянск · Обновлено 27.10.2026 · <a href="index.html">На главную</a></p>
     </footer>
 
-    <!-- Плавающая кнопка: видна на каждой странице -->
     <a class="fab" href="order.html">
-        <img src="favicon.svg" alt="" width="28" height="28">
+        <img src="favicon.svg" alt="Иконка заказа" width="28" height="28">
         <span>Нет нужной? Закажем!</span>
     </a>
 

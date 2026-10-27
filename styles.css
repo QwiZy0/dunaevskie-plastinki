@@ -3,7 +3,6 @@
    ===================================================== */
 
 /* ---------- Цвета ---------- */
-/* Тёмная тема (по умолчанию) */
 body {
   --bg: #100b10;
   --surface: #1c141c;
@@ -13,10 +12,10 @@ body {
   --pink: #ff4d8d;
   --peach: #ffb08a;
   --line: #3a2a3a;
-  --ink: #1b0a14;        /* тёмный текст на розово-персиковых кнопках */
+  --ink: #1b0a14;
 }
 
-/* Светлая тема: включается, когда нажат переключатель #theme */
+/* Светлая тема */
 body:has(#theme:checked) {
   --bg: #fff3ec;
   --surface: #ffffff;
@@ -39,10 +38,6 @@ body {
   color: var(--text);
   font: 400 17px/1.6 Onest, Arial, sans-serif;
   transition: background-color 0.4s, color 0.4s;
-}
-
-a {
-  color: inherit;
 }
 
 h1, h2, h3 {
@@ -84,7 +79,6 @@ section {
   max-width: 60ch;
 }
 
-/* Заголовок с розово-персиковым градиентом */
 .grad {
   background: linear-gradient(95deg, var(--pink), var(--peach));
   -webkit-background-clip: text;
@@ -139,22 +133,8 @@ section {
   list-style: none;
 }
 
-.menu a {
-  display: block;
-  padding: 0.35rem 0.8rem;
-  border-radius: 99px;
-  color: var(--muted);
-  text-decoration: none;
-  transition: 0.25s;
-}
+/* Стили для пунктов меню заданы ниже в блоке ссылок, чтобы не дублировать */
 
-.menu a:hover,
-.menu a[aria-current] {
-  color: var(--ink);
-  background: linear-gradient(95deg, var(--pink), var(--peach));
-}
-
-/* Пункт «Под заказ» с мигающей точкой */
 .menu .hot a {
   color: var(--text);
 }
@@ -261,7 +241,6 @@ section {
   color: var(--text);
 }
 
-/* Большая кнопка: блик пробегает по ней */
 .btn-big {
   padding: 1rem 2rem;
   font-size: 1.15rem;
@@ -304,7 +283,6 @@ section {
   place-items: center;
 }
 
-/* Крутящаяся пластинка, нарисованная на CSS */
 .record {
   position: relative;
   display: grid;
@@ -317,7 +295,6 @@ section {
   animation: spin 8s linear infinite;
 }
 
-/* Блики на пластинке */
 .record::before {
   content: "";
   position: absolute;
@@ -329,7 +306,6 @@ section {
   background: conic-gradient(transparent 0 20%, rgba(255, 255, 255, 0.18) 25%, transparent 30% 70%, rgba(255, 255, 255, 0.18) 75%, transparent 80%);
 }
 
-/* Этикетка в центре */
 .record span {
   position: relative;
   display: grid;
@@ -392,7 +368,6 @@ section {
   animation: flow 8s ease infinite;
 }
 
-/* Две плавающие пластинки на фоне */
 .wanted::before,
 .wanted::after {
   content: "";
@@ -434,7 +409,6 @@ section {
   font-weight: 600;
 }
 
-/* Меняющийся текст: слова сменяют друг друга */
 .rotator {
   height: 1.5em;
   overflow: hidden;
@@ -466,7 +440,6 @@ section {
   animation: wiggle 4s ease-in-out infinite;
 }
 
-/* Быстрые кнопки-подсказки */
 .quick {
   display: flex;
   flex-wrap: wrap;
@@ -526,7 +499,6 @@ section {
   font-size: 0.92rem;
 }
 
-/* Обложка пластинки с диском, который выезжает */
 .cover {
   position: relative;
   z-index: 1;
@@ -575,7 +547,6 @@ section {
   margin-top: 1rem !important;
 }
 
-/* Карточка «Не нашли свою?» */
 .card-order {
   display: flex;
   flex-direction: column;
@@ -753,7 +724,6 @@ textarea:focus {
   box-shadow: 0 0 0 4px rgba(255, 77, 141, 0.25);
 }
 
-/* Выбор издания: кнопки-переключатели */
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -810,7 +780,6 @@ textarea:focus {
   border-radius: 18px;
 }
 
-/* В тёмной теме затемняем карту */
 body:not(:has(#theme:checked)) .map iframe {
   filter: invert(0.92) hue-rotate(180deg) saturate(0.7);
 }
@@ -838,7 +807,6 @@ body:not(:has(#theme:checked)) .map iframe {
   animation: spin 3s linear infinite;
 }
 
-/* Расходящееся кольцо вокруг кнопки */
 .fab::before {
   content: "";
   position: absolute;
@@ -923,7 +891,27 @@ body:not(:has(#theme:checked)) .map iframe {
   50% { border-color: var(--peach); }
 }
 
-/* ---------- Телефоны и планшеты ---------- */
+/* ---------- Стили для обложек (картинок) ---------- */
+.cover-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cover-img img {
+  transform: scale(1.05);
+}
+
+/* ---------- АДАПТИВНОСТЬ (Телефоны и планшеты) ---------- */
 @media (max-width: 820px) {
   .hero,
   .two {
@@ -966,21 +954,47 @@ body:not(:has(#theme:checked)) .map iframe {
     transition: none !important;
   }
 }
-.cover-img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 15px;
+
+/* =====================================================
+   СОСТОЯНИЯ ССЫЛОК (требование лабы №2)
+   ===================================================== */
+
+/* 1. Обычная ссылка */
+a:link {
+  text-decoration: none;
+  transition: color 0.25s ease;
 }
 
-.cover-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+/* 2. Посещенная ссылка (чтобы не становилась стандартной фиолетовой) */
+a:visited {
+  color: inherit; 
 }
 
-.card:hover .cover-img img {
-    transform: scale(1.05);
+/* 3. При наведении */
+a:hover {
+  color: var(--pink);
+}
+
+/* 4. Активная (в момент клика) */
+a:active {
+  color: var(--peach);
+}
+
+/* --- Настройка ссылок в верхнем меню --- */
+.menu a:link,
+.menu a:visited {
+  color: var(--muted);
+  display: block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 99px;
+}
+
+.menu a:hover,
+.menu a[aria-current] {
+  color: var(--ink);
+  background: linear-gradient(95deg, var(--pink), var(--peach));
+}
+
+.menu a:active {
+  transform: scale(0.95);
 }

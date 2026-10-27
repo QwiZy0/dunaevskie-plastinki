@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прайс-лист · Dunaevskie Plastinki</title>
-    <meta name="description" content="Dunaevskie Plastinki: магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди. Достанем любую пластинку под заказ.">
+    <meta name="description" content="Магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
     <header class="header">
         <a class="logo" href="index.html">
-            <img class="logo-disc" src="favicon.svg" alt="" width="36" height="36">
+            <img class="logo-disc" src="favicon.svg" alt="Логотип" width="36" height="36">
             <span>Dunaevskie<br>Plastinki</span>
         </a>
-        <nav>
+        <nav aria-label="Главное меню">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html">Под заказ</a></li>
-            <li><a href="price.html" aria-current="page">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html">Под заказ</a></li>
+                <li><a href="price.html" aria-current="page">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <!-- Переключатель темы (чистый CSS, без JavaScript) -->
         <div class="toggle" title="Сменить тему">
             <input type="checkbox" id="theme" aria-label="Светлая тема">
             <label for="theme"></label>
@@ -54,195 +52,193 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Lil Peep</td>
-                        <td>Come Over When You're Sober, Pt. 1</td>
-                        <td>Эмо-рэп</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 900 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Lil Peep</td>
-                        <td>Come Over When You're Sober, Pt. 2</td>
-                        <td>Эмо-рэп</td>
-                        <td>LP, 12″</td>
-                        <td class="price">9 500 ₽</td>
-                        <td class="few">Осталось 1–2</td>
-                    </tr>
-                    <tr>
-                        <td>blink-182</td>
-                        <td>Enema of the State</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 400 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>blink-182</td>
-                        <td>Take Off Your Pants and Jacket</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 600 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>blink-182</td>
-                        <td>California</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 900 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Fall Out Boy</td>
-                        <td>From Under the Cork Tree</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 900 ₽</td>
-                        <td class="few">Осталось 1–2</td>
-                    </tr>
-                    <tr>
-                        <td>Fall Out Boy</td>
-                        <td>Infinity on High</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 100 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Fall Out Boy</td>
-                        <td>So Much (For) Stardust</td>
-                        <td>Поп-рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 800 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Green Day</td>
-                        <td>American Idiot</td>
-                        <td>Панк-рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 200 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Green Day</td>
-                        <td>Dookie</td>
-                        <td>Панк-рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 000 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>My Chemical Romance</td>
-                        <td>The Black Parade</td>
-                        <td>Эмо / рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">9 300 ₽</td>
-                        <td class="few">Осталось 1–2</td>
-                    </tr>
-                    <tr>
-                        <td>My Chemical Romance</td>
-                        <td>Three Cheers for Sweet Revenge</td>
-                        <td>Эмо / рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 700 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Paramore</td>
-                        <td>Riot!</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 600 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Paramore</td>
-                        <td>After Laughter</td>
-                        <td>Синти-поп</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 300 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Sum 41</td>
-                        <td>All Killer No Filler</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 300 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Neck Deep</td>
-                        <td>Life's Not Out to Get You</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">7 100 ₽</td>
-                        <td class="pre">Предзаказ</td>
-                    </tr>
-                    <tr>
-                        <td>Machine Gun Kelly</td>
-                        <td>Tickets to My Downfall</td>
-                        <td>Поп-панк</td>
-                        <td>LP, 12″</td>
-                        <td class="price">8 600 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Ногу Свело!</td>
-                        <td>Хару Мамбуру</td>
-                        <td>Русский рок</td>
-                        <td>LP, 12″</td>
-                        <td class="price">6 900 ₽</td>
-                        <td class="in">В наличии</td>
-                    </tr>
-                    <tr>
-                        <td>Кишлак</td>
-                        <td>Виниловое издание (уточнить релиз)</td>
-                        <td>Русская альтернатива</td>
-                        <td>LP, 12″</td>
-                        <td class="price">6 500 ₽</td>
-                        <td class="pre">Предзаказ</td>
-                    </tr>
-                    <tr>
-                        <td>Конец солнечных дней</td>
-                        <td>Виниловое издание (уточнить релиз)</td>
-                        <td>Русский инди</td>
-                        <td>LP, 12″</td>
-                        <td class="price">6 400 ₽</td>
-                        <td class="pre">Предзаказ</td>
-                    </tr>
+                        <tr>
+                            <td>Lil Peep</td>
+                            <td>Come Over When You're Sober, Pt. 1</td>
+                            <td>Эмо-рэп</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 900 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Lil Peep</td>
+                            <td>Come Over When You're Sober, Pt. 2</td>
+                            <td>Эмо-рэп</td>
+                            <td>LP, 12″</td>
+                            <td class="price">9 500 ₽</td>
+                            <td class="few">Осталось 1–2</td>
+                        </tr>
+                        <tr>
+                            <td>blink-182</td>
+                            <td>Enema of the State</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 400 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>blink-182</td>
+                            <td>Take Off Your Pants and Jacket</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 600 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>blink-182</td>
+                            <td>California</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 900 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Fall Out Boy</td>
+                            <td>From Under the Cork Tree</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 900 ₽</td>
+                            <td class="few">Осталось 1–2</td>
+                        </tr>
+                        <tr>
+                            <td>Fall Out Boy</td>
+                            <td>Infinity on High</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 100 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Fall Out Boy</td>
+                            <td>So Much (For) Stardust</td>
+                            <td>Поп-рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 800 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Green Day</td>
+                            <td>American Idiot</td>
+                            <td>Панк-рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 200 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Green Day</td>
+                            <td>Dookie</td>
+                            <td>Панк-рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 000 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>My Chemical Romance</td>
+                            <td>The Black Parade</td>
+                            <td>Эмо / рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">9 300 ₽</td>
+                            <td class="few">Осталось 1–2</td>
+                        </tr>
+                        <tr>
+                            <td>My Chemical Romance</td>
+                            <td>Three Cheers for Sweet Revenge</td>
+                            <td>Эмо / рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 700 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Paramore</td>
+                            <td>Riot!</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 600 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Paramore</td>
+                            <td>After Laughter</td>
+                            <td>Синти-поп</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 300 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Sum 41</td>
+                            <td>All Killer No Filler</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 300 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Neck Deep</td>
+                            <td>Life's Not Out to Get You</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">7 100 ₽</td>
+                            <td class="pre">Предзаказ</td>
+                        </tr>
+                        <tr>
+                            <td>Machine Gun Kelly</td>
+                            <td>Tickets to My Downfall</td>
+                            <td>Поп-панк</td>
+                            <td>LP, 12″</td>
+                            <td class="price">8 600 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Ногу Свело!</td>
+                            <td>Хару Мамбуру</td>
+                            <td>Русский рок</td>
+                            <td>LP, 12″</td>
+                            <td class="price">6 900 ₽</td>
+                            <td class="in">В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Кишлак</td>
+                            <td>Виниловое издание (уточнить релиз)</td>
+                            <td>Русская альтернатива</td>
+                            <td>LP, 12″</td>
+                            <td class="price">6 500 ₽</td>
+                            <td class="pre">Предзаказ</td>
+                        </tr>
+                        <tr>
+                            <td>Конец солнечных дней</td>
+                            <td>Виниловое издание (уточнить релиз)</td>
+                            <td>Русский инди</td>
+                            <td>LP, 12″</td>
+                            <td class="price">6 400 ₽</td>
+                            <td class="pre">Предзаказ</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="legend">
+            <div class="legend">
                 <span class="tag in">В наличии</span>
                 <span class="tag few">Мало на складе</span>
                 <span class="tag pre">Предзаказ</span>
-            </p>
+            </div>
         </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="footer">
-        <nav>
+        <nav aria-label="Меню в подвале">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html">Под заказ</a></li>
-            <li><a href="price.html" aria-current="page">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html">Под заказ</a></li>
+                <li><a href="price.html" aria-current="page">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
         <p>© 2026 Dunaevskie Plastinki · Брянск · Обновлено 27.10.2026 · <a href="index.html">На главную</a></p>
     </footer>
 
-    <!-- Плавающая кнопка: видна на каждой странице -->
     <a class="fab" href="order.html">
-        <img src="favicon.svg" alt="" width="28" height="28">
+        <img src="favicon.svg" alt="Иконка заказа" width="28" height="28">
         <span>Нет нужной? Закажем!</span>
     </a>
 

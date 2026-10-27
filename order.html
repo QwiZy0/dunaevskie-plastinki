@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пластинка под заказ · Dunaevskie Plastinki</title>
-    <meta name="description" content="Dunaevskie Plastinki: магазин виниловых пластинок в Брянске. Поп-панк, эмо, русский рок и инди. Достанем любую пластинку под заказ.">
+    <meta name="description" content="Магазин виниловых пластинок в Брянске. Достанем любую пластинку под заказ.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
     <header class="header">
         <a class="logo" href="index.html">
-            <img class="logo-disc" src="favicon.svg" alt="" width="36" height="36">
+            <img class="logo-disc" src="favicon.svg" alt="Логотип" width="36" height="36">
             <span>Dunaevskie<br>Plastinki</span>
         </a>
-        <nav>
+        <nav aria-label="Главное меню">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <!-- Переключатель темы (чистый CSS, без JavaScript) -->
         <div class="toggle" title="Сменить тему">
             <input type="checkbox" id="theme" aria-label="Светлая тема">
             <label for="theme"></label>
@@ -59,7 +57,7 @@
 
         <section>
             <h2>Что вы ищете?</h2>
-            <form class="order-form" action="mailto:hello@dunaevskie.example" method="post" enctype="text/plain">
+            <form class="order-form" action="#" method="post">
                 <label>Исполнитель
                     <input type="text" name="artist" placeholder="Например, Green Day" required>
                 </label>
@@ -94,16 +92,15 @@
         </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="footer">
-        <nav>
+        <nav aria-label="Меню в подвале">
             <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="about.html">О магазине</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="hot"><a href="order.html" aria-current="page">Под заказ</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
         <p>© 2026 Dunaevskie Plastinki · Брянск · Обновлено 27.10.2026 · <a href="index.html">На главную</a></p>
