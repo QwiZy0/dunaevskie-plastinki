@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" id="main-style">
+    <!-- jQuery (как в методичке) и общий скрипт сайта -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,14 +23,16 @@
         </a>
         <nav aria-label="Главное меню">
             <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+                <li><a href="index.html" aria-current="page">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li class="hot"><a href="order.html">Под заказ</a></li>
                 <li><a href="price.html">Прайс-лист</a></li>
                 <li><a href="about.html">О магазине</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <!-- Кнопка переключения на версию для печати -->
+        <button type="button" class="print-btn" id="print-btn">Версия для печати</button>
         <!-- Переключатель темки (чистый CSS) -->
         <div class="toggle" title="Сменить тему">
             <input type="checkbox" id="theme" aria-label="Светлая тема">
@@ -37,7 +42,7 @@
 
     <main>
         <section>
-            <h1 class="grad">Каталог</h1>
+            <h1 class="grad">Главная</h1>
             <p class="lead">20 пластинок: от зарубежного поп-панка до русского инди. Наведите курсор на обложку, и диск выглянет из конверта.</p>
             
             <div class="grid">
@@ -314,8 +319,8 @@
     <footer class="footer">
         <nav aria-label="Меню в подвале">
             <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+                <li><a href="index.html" aria-current="page">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li class="hot"><a href="order.html">Под заказ</a></li>
                 <li><a href="price.html">Прайс-лист</a></li>
                 <li><a href="about.html">О магазине</a></li>
