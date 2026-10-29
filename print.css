@@ -156,3 +156,10 @@ td.few { font-style: italic; }
     display: none;
   }
 }
+
+/* Лаба 4: окно входа и кабинетная панель в печать не идут */
+.auth,
+.modal,
+.cab-side {
+  display: none !important;
+}
